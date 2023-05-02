@@ -1,0 +1,244 @@
+/*Importerer font fra Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(43, 43, 42);
+}
+
+h1, h3, p {
+    color: white;
+}
+
+h1 {
+    padding: 2rem;
+}
+
+header {
+    background-color: rgb(36, 36, 35);
+    padding: 1.3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding: 1.3rem;
+}
+
+header nav a {
+    transition: all 400ms ease-in-out;
+}
+
+header nav a:hover {
+    color: rgb(161, 195, 73);
+}
+
+header .contact {
+    background-color: rgb(161, 195, 73);
+    padding: 0.5rem;
+    border: 1px solid white;
+
+    transition: all 400ms ease-in-out;
+}
+
+header .contact:hover {
+    border-radius: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > section > div > button {
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    color: white;
+    padding: 1rem;
+    background-color: rgb(161, 195, 73);
+    border: solid 1px white;
+
+    transition: all 400ms ease-in-out;
+}
+
+main > section > div > button:hover {
+    cursor: pointer;
+    background-color: rgb(132, 159, 62);
+}
+
+main > section {
+    display: flex;
+    flex-direction: row;
+}
+
+main > section > div {
+    margin: 1.3rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: white;
+    color: rgb(36, 36, 35);
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > section > h2 {
+    padding: 1rem;
+}
+
+footer > section > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > section > .container > .left {
+    padding: 7rem;
+}
+
+footer > section > .container > .right {
+    padding: 7rem;
+}
+
+footer > section > .container > .left > p {
+    color: rgb(36, 36, 35);
+    font-size: larger;
+}
+
+footer > section > .container > .left > a {
+    color: rgb(36, 36, 35);
+    text-decoration: none;
+    font-size: larger;
+
+    box-shadow: inset 0 0 0 0 rgb(161, 195, 73);
+    color: rgb(161, 195, 73);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+footer > section > .container > .right > .scaleImg {
+    width: 400px;
+    height: 200px;
+}
+
+footer > section > .container > .right > .circleImg {
+    width: 400px;
+    height: 400px;
+}
+
+footer > section > .container > .left > a:hover {
+    box-shadow: inset 100px 0 0 0 rgb(161, 195, 73);
+    color: white;
+}
+
+main > img {
+    filter: invert(69%) sepia(74%) saturate(327%) hue-rotate(34deg) brightness(91%) contrast(92%);
+}
+
+
+
+/* Style for undersiden med min musikk */
+main > section > .artwork {
+    position: relative;
+    text-align: center;
+    color: white;
+    filter: grayscale(100%);
+    overflow: hidden;
+
+    border: 1px solid white;
+
+    transition: all 400ms ease-in-out;
+}
+
+main > section > .artwork:hover {
+    filter: grayscale(0%);
+}
+
+main > section > .artwork > .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: all 400ms ease-in-out;
+}
+
+main > section > .artwork > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(40%);
+
+    transition: all 400ms ease-in-out;
+}
+
+main > section > .artwork:hover > img {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+main > section > .artwork > .text > a {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+
+
+/* Style for undersiden med to-do-liste */
+main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section > .container {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > .container > .inputArea {
+    display: flex;
+    flex-direction: row;
+}
+
+#inputField {
+    padding: 1rem;
+    border: 1px solid white;
+}
+
+#addToDo {
+    padding: 0 1rem;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(161, 195, 73);
+    color: white;
+    border: 1px solid white;
+
+    transition: all 400ms ease-in-out;
+}
+
+#addToDo:hover {
+    cursor: pointer;
+    background-color: rgb(132, 159, 62);
+}

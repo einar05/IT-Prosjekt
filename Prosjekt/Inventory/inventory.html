@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">Home</a>
+        </div>
+        <nav>
+            <a href="../Generator/generator.html">Genre/BPM/key generator</a>
+            <a href="../My Music/music.html">My music</a>
+            <a href="../Challenges/challenges.html">Challenges</a>
+            <a href="../Music Theory/theory.html">Music theory</a>
+            <a href="./inventory.html">Inventory</a>
+            <a href="#">Sources</a>
+        </nav>
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Inventory</h1>
+                <h3>For when you feel structured</h3>
+                <p>1. Write something in the input field below and click "Add" to add it to the list of items.</p>
+                <p>2. Once added, items can be marked by clicking the desired item once or deleted from the list by clicking twice.</p>
+                <div class="inputArea">
+                    <input id="inputField" type="text"><button id="addToDo">Add</button>
+                </div>
+                <div class="items" id="toDoContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./inventory.js"></script>
+</body>
+</html>
